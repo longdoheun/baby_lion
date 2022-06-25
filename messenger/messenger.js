@@ -12,7 +12,7 @@ import MESSAGES from "./message.js"
   
     //3. 휴지통 이미지를 담은 img 태그
     const TRASHCAN_IMG = document.createElement("img");
-    TRASHCAN_IMG.src = "../svg/empty_heart.svg";
+    TRASHCAN_IMG.src = "../svg/trash.svg";
     TRASHCAN_IMG.classList.add("trashcan");
 
     // 2-1-1. 송신자의 이름을 담은 span태그

@@ -1,76 +1,40 @@
 const MESSAGES = [
   {
-    name : "은행잎",
-    profile_img_src : "../svg/ginko.svg",
+    name : "익명",
+    profile_img_src : "../svg/user_green.svg",
     timeStamp : "06/28 16:28",
     text : "쪽문에서 만나요!"
   },
   {
-   name : "로봇",
-   profile_img_src : "../svg/robot.svg",
+   name : "익명",
+   profile_img_src : "../svg/user_green.svg",
    timeStamp : "06/28 16:28",
-   text : "미쳤습니까? 휴먼"
+   text : "비즈니스 영어 교재 있으신가요?"
  },
  {
-   name : "명륜당",
-   profile_img_src : "../svg/myeong-ryun-dang.svg",
+   name : "익명",
+   profile_img_src : "../svg/user_green.svg",
    timeStamp : "06/28 16:28",
-   text : "문묘에 있어요...!"
+   text : "ㅠㅠ"
  },
  {
-  name : "은행잎",
-  profile_img_src : "../svg/ginko.svg",
-  timeStamp : "06/28 16:28",
-  text : "쪽문에서 만나요!"
-},
-{
- name : "로봇",
- profile_img_src : "../svg/robot.svg",
- timeStamp : "06/28 16:28",
- text : "미쳤습니까? 휴먼"
-},
-{
- name : "명륜당",
- profile_img_src : "../svg/myeong-ryun-dang.svg",
- timeStamp : "06/28 16:28",
- text : "문묘에 있어요...!"
-},
-{
   name : "익명",
-  profile_img_src : "../svg/ginko.svg",
+  profile_img_src : "../svg/user_yellow.svg",
   timeStamp : "06/28 16:28",
   text : "쪽문에서 만나요!"
 },
 {
  name : "익명",
- profile_img_src : "../svg/robot.svg",
+ profile_img_src : "../svg/user_green.svg",
  timeStamp : "06/28 16:28",
- text : "미쳤습니까? 휴먼"
+ text : "논어 레포트 제출 언제까지죠?"
 },
 {
  name : "익명",
- profile_img_src : "../svg/myeong-ryun-dang.svg",
+ profile_img_src : "../svg/user_green.svg",
  timeStamp : "06/28 16:28",
- text : "문묘에 있어요...!"
-},
-{
-  name : "익명",
-  profile_img_src : "../svg/ginko.svg",
-  timeStamp : "06/28 16:28",
-  text : "쪽문에서 만나요!"
-},
-{
- name : "익명",
- profile_img_src : "../svg/robot.svg",
- timeStamp : "06/28 16:28",
- text : "미쳤습니까? 휴먼"
-},
-{
- name : "익명",
- profile_img_src : "../svg/myeong-ryun-dang.svg",
- timeStamp : "06/28 16:28",
- text : "문묘에 있어요...!"
-},
+ text : "토존 이번에 과제 있었나요?"
+}
 ]
 
 export default MESSAGES;

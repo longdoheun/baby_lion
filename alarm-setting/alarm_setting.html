@@ -5,34 +5,37 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/menu&nav.css">
-  <link rel="stylesheet" href="./messenger.css">
+  <link rel="stylesheet" href="./alarm_setting.css">
+  <link rel="stylesheet" href="./timetable.css">
   <title>SKKU MAP</title>
 </head>
 <body>
   <menu class="menu-bar">
     <div>
       <img src="../svg/left_arrow.svg" alt="left_arrow.svg" id="left-arrow">
-      <span class="page-name">메시지함</span>
+      <span class="page-name"></span>
     </div>
     <img src="../svg/bell.svg" alt="bell.svg" id="bell">
   </menu>
-  <div class="input-cover">
-    <input type="text" placeholder="채팅, 친구, 키워드 검색">
-  </div>
-  <ul class="ms-container">
-    <!-- 예시구조 -->
-    <!-- <li class="ms">
-      <img src="../svg/ginko.svg" alt="profile.svg" class="profile">
-      <div class="ms-info">
-        <div class="status">
-          <span class="name">익명</span>
-          <span class="time-stamp">06/28 16:28</span>
-        </div>
-        <div class="ms-text">쪽문에서 만나요!</div>
-      </div>
-      <img src="../svg/trash.svg" alt="trashcan.svg" class="trashcan">
-    </li> -->
-  </ul>
+  <section class="alert-setting">
+    <img src="../svg/alarm_green.svg" alt="alarm.svg" class="alarm">
+    <h1 class="page-title">알림 설정</h1>
+  </section>
+  <section class="day-setting"></section>
+  <section class="timetable">
+    <ul class="table">
+      <!-- 예시구조 -->
+      <!-- <li class="row-hour">
+        <h3 class="hour">9<br/>Am</h3>
+      </li> -->
+      <!-- 예시구조 -->
+      <!-- <div class="schedule">
+        <h5 class="location">9B313 국제관</h5>
+        <h4 class="to-do">지능형인지감성디자인</h4>
+        <h5 class="duration">10 am - 11 am</h5>
+      </div> -->
+    </ul>
+  </section>
   <nav class="nav-bar">
     <div class="nav-icon">
       <img src="../svg/home.svg" alt="home.svg" id="home">
@@ -51,6 +54,6 @@
       <p class="icon-name">내 정보</p>
     </div>
   </nav>
-  <script type="module" src="./messenger.js"></script>
+  <script type="module" src="./alarm_setting.js"></script>
 </body>
 </html>
