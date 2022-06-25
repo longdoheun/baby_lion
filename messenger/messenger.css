@@ -1,0 +1,88 @@
+.input-cover{
+  box-sizing: border-box;
+  width: 83%;
+  height: 45px;
+  background: #FFFFFF;
+  border: 2px solid #10675B;
+  border-radius: 30px;
+  margin: 100px auto 18px auto;
+}
+
+input{
+  width: 80%;
+  height: 22.5px;
+  margin: 10px 0 0 18px;
+  border: none;
+  font-family: 'Noto Sans Thai';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  /* or 147% */
+  letter-spacing: -0.408px;
+  color: #ABB0BC;
+}
+
+input:focus{
+  outline:none;
+}
+body{
+  width: 100%;
+}
+.ms-container{
+  margin-bottom: 150px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+}
+.ms{
+  /* margin-top: 11px; */
+  padding: 5.5px;
+  width: 96%;
+  display: flex;
+  flex-direction: row;
+  /* background-color:#eee; */
+  font-style: normal;
+  letter-spacing: -0.408px;
+  color: #000000;
+}
+.ms:hover{
+  background-color:#eee;
+}
+.profile{
+  width: 52px;
+  height: 52px;
+}
+.trashcan{
+  margin-top: 21px;
+  width: 18px;
+  height: 19px;
+}
+.ms-info{
+  margin-left: 7px;
+  width: calc(100% - 70px);
+}
+.status{
+  margin-top: 7px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.name{
+  /* background-color: #ccc; */
+  font-size: 15px;
+  font-weight: 600;
+}
+.time-stamp{
+  /* background-color: #ccc; */
+  font-size: 13px;
+  font-weight: 500;
+}
+.ms-text{
+  margin-top: 5px;
+  font-size: 13px;
+  font-weight: 500;
+}

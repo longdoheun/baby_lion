@@ -21,6 +21,7 @@ const renderFavoriteList = () => {
     const HEART_IMG = document.createElement("img");
     HEART_IMG.src = favorite.isheart ? "../svg/filled_heart.svg" : "../svg/empty_heart.svg";
     HEART_IMG.classList.add("heart");
+    
     //heart click event #change icon #change likes 
     HEART_IMG.addEventListener("click",(e)=>{
       favorite.isheart = favorite.isheart ? false : true;

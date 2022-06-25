@@ -10,7 +10,7 @@ const FAVORITES = [
     isheart: true,
   },
   {
-    name: "퇴계 인문관",
+    name: "퇴계인문관",
     nlikes: 1107,
     isheart: false,
   },
@@ -20,12 +20,12 @@ const FAVORITES = [
     isheart: false,
   },
   {
-    name: "600주년 기념관",
+    name: "600주년기념관",
     nlikes: 1107,
     isheart: false,
   },
   {
-    name: "다산 경제관",
+    name: "다산경제관",
     nlikes: 1204,
     isheart: false,
   },
@@ -50,7 +50,7 @@ const FAVORITES = [
     isheart: false,
   },
   {
-    name: "삼성 학술 정보관",
+    name: "삼성학술정보관",
     nlikes: 1204,
     isheart: false,
   },
@@ -65,7 +65,7 @@ const FAVORITES = [
     isheart: false,
   },
   {
-    name: "인터네셔널 하우스",
+    name: "인터네셔널하우스",
     nlikes: 1107,
     isheart: false,
   },
