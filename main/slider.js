@@ -5,7 +5,6 @@ const IMGCON = document.querySelector(".banner-container");
 const SLIDER = document.querySelector(".slider");
 const CIRCLE_CONTAINER = document.querySelector(".info-circles");
 
-
 BANNER.forEach((banner) => {
   const img = document.createElement("div");
 

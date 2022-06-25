@@ -11,10 +11,28 @@
   padding: 0;
 }
 body{
+  background: #000;
+  overflow: hidden;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
   background: #01BEB1;
+
 }
-p{
+.loading{
+  background: #01BEB1;
+  overflow: hidden;
+  max-width: 600px;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;*/
+}
+.row{
+  width: 200%;
+  overflow: hidden;
   height: 66px;
+  width: 300%;
   font-style: normal;
   font-weight: 700;
   font-size: 66px;
@@ -22,39 +40,49 @@ p{
   text-align: center;
   letter-spacing: -0.408px;
   color: #1D9C87;
+  background: #01BEB1;
 }
-p:nth-child(odd){
-  animation-duration: 8s;
+.row:nth-child(odd){
+  animation-duration: 6s;
   animation-name: slidein;
   animation-iteration-count: infinite;
-  /* animation-direction: alternate; */
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  /* animation-iteration-count: 1; */
 }
-
-p:nth-child(2n){
-  animation-duration: 8s;
+.green{
+  color: #10675B;
+}
+.yellow{
+  color: #FFFC54;
+}
+.row:nth-child(2n){
+  animation-duration: 6s;
   animation-name: slideout;
   animation-iteration-count: infinite;
-  /* animation-direction: alternate; */
+  animation-timing-function: linear;
+  /* animation-iteration-count: 1; */
+  animation-direction: alternate;
 }
 @keyframes slidein {
   from {
     margin-left: 0%;
-    width: 300%
-  }
-
-  to {
-    margin-left: 100%;
-    width: 300%;
-  }
-}
-@keyframes slideout {
-  from {
-    margin-left: 0%;
-    width: 300%;
+    width: 200%
   }
 
   to {
     margin-left: -100%;
-    width: 300%
+    width: 200%;
+  }
+}
+@keyframes slideout {
+  from {
+    margin-left: -100%;
+    width: 200%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 200%
   }
 }
