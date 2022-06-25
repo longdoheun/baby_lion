@@ -17,6 +17,7 @@ BANNER.forEach((banner) => {
   const PARAGRAPH = document.createElement("p")
   const p_text = document.createTextNode( banner.paragraph );
   PARAGRAPH.appendChild(p_text)
+  PARAGRAPH.classList.add("building-info")
 
   img_info.appendChild(TITLE);
   img_info.appendChild(PARAGRAPH);

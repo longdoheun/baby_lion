@@ -5,16 +5,24 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./main.css">
+  <link rel="stylesheet" href="../css/menu&nav.css">
   <title>SKKU MAP</title>
 </head>
 <body>
+  <menu class="menu-bar">
+    <div>
+      <img src="../svg/left_arrow.svg" alt="left_arrow.svg" id="left-arrow">
+      <span class="page-name"></span>
+    </div>
+    <img src="../svg/bell.svg" alt="bell.svg" id="bell">
+  </menu>
   <section class="slider">
     <div class="banner-container">
       <!-- 예시구조 -->
       <div class="img">
         <div class="img-info">
           <h1>호암관</h1>
-          <p>1969년 건립된 지상 12층 규모의 건물로 학부대학과 사범대학, 교육대학원이 사용한다. 강의공간 및 학군단, 교수 연구실이 위치함.</p>
+          <p class="building-info">1969년 건립된 지상 12층 규모의 건물로 학부대학과 사범대학, 교육대학원이 사용한다. 강의공간 및 학군단, 교수 연구실이 위치함.</p>
         </div>
         <img class="building-img" src="./myeong-ryun-dang.svg" alt="명륜당.img">
       </div>
@@ -47,6 +55,24 @@
       </div>
     </div>
   </section>
+  <nav class="nav-bar">
+    <div class="nav-icon">
+      <img src="../svg/home.svg" alt="home.svg" id="home">
+      <p class="icon-name">홈</p>
+    </div>
+    <div class="nav-icon">
+      <img src="../svg/message.svg" alt="message.svg" id="message">
+      <p class="icon-name">메시지</p>
+    </div>
+    <div class="nav-icon">
+      <img src="../svg/favorite.svg" alt="favorite.svg" id="favorites">
+      <p class="icon-name">즐겨찾기</p>
+    </div>
+    <div class="nav-icon">
+      <img src="../svg/my.svg" alt="my.svg" id="my">
+      <p class="icon-name">내 정보</p>
+    </div>
+  </nav>
   <script type="module" src="./slider.js"></script>
 </script>
 </body>

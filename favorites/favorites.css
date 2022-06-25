@@ -1,0 +1,67 @@
+@font-face {
+  font-family: 'CWDangamAsac-Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/CWDangamAsac-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap');
+
+*{
+  font-family: 'Noto Sans KR', sans-serif;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.favorites-container{
+  /* margin-top: 43px; */
+  width: 88%;
+  margin: 120px auto;
+  /* background-color: red; */
+}
+.select-sort{
+  display: flex;
+  justify-content: right;
+  
+}
+.select-sort > span{
+  font-family: 'Noto Sans Thai';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 22px;
+  letter-spacing: -0.408px;
+  color: #000000;
+}
+.favorites-list{
+  margin-top: 10.27px;
+}
+.favorite{
+  margin-top: 28px;
+  border-bottom: 1px solid #10675B;
+  padding-bottom: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: 'Noto Sans Thai';
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: -0.408px;
+}
+.favorite-building{
+  font-size: 17px;
+  color: #10675B;
+}
+.nlikes{
+  font-size: 11px;
+  color: #01BEB1;
+  margin-right: 5px;
+}
+.heart{
+  position: relative;
+  top: 2px;
+  width: 17.5px;
+  height: 14.5px;
+}
