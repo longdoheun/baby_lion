@@ -39,7 +39,7 @@ const change_total_min = (start, finish) => {
 
 const calculateMarginTop = (start) => {
   const [ startHour, startMin ] = start.split(":");
-  return 76*(Number(startHour)-1) + 75/60*Number(startMin)
+  return 76*Number(startHour) + 75/60*Number(startMin)
 }
 
 const calculateHeight = (start, finish) => {

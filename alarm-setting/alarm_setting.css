@@ -12,7 +12,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #eee;
+  /* background-color: #eee; */
 }
 .alarm{
   width: 51.33px;
@@ -25,15 +25,62 @@
   font-size: 30px;
   line-height: 22px;
 }
-.day-setting{
+
+
+/* from here  */
+
+.days{
+  /* position: absolute; */
+  z-index: 5;
+  width: 100%;
   margin-top: 20px;
   height: 107px;
-  background-color: #eee;
-}
-.timetable{
-  margin-top: 23.08px;
+  /* background-color: #eee; */
   display: flex;
-  justify-content: center;
-  height: 400px;
-  overflow: scroll;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.day-info{
+  border-top: 17.46px solid #10675B;
+  background-color: #fff;
+  border-radius: 10.91px;
+  width: 54.55px;
+  width: 14%;
+  height: 66.37px;
+  /* height: 76.37px; */
+  font-family: 'Mulish';
+  font-style: normal;
+  text-align: center;
+  color: #000000;
+  box-shadow: 0px 21.8201px 21.8201px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0px 21.8201px 21.8201px rgba(0, 0, 0, 0.15); */
+}
+
+.day-info-day{
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 40px;
+}
+.day-info-date{
+  font-weight: 400;
+  font-size: 15px;
+}
+#center{
+  width: 76.37px;
+  width: 19.5%;
+  height: 82.48px;
+  /* height: 100.92px; */
+  border-top: 24.44px solid #FDE461;
+  outline: 3px solid #000;
+}
+#center > .day-info-day{
+  border-top: 3px solid #000000;
+  font-weight: 700;
+  font-size: 26px;
+}
+#center > .day-info-date{
+  font-weight: 400;
+  font-size: 20px;
 }

@@ -1,3 +1,11 @@
+.timetable{
+  margin-top: 23.08px;
+  display: flex;
+  justify-content: center;
+  height: 400px;
+  overflow: scroll;
+}
+
 .table{
   position: relative;
   width: 94%;
