@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/menu&nav.css">
+  <link rel="stylesheet" href="./map.css">
+  <link rel="stylesheet" href="./building&tag.css">
+  <!-- <link rel="stylesheet" href="./map_resp.css"> -->
+  <title>Document</title>
+</head>
+<body>
+  <menu class="menu-bar">
+    <div>
+      <img src="../svg/left_arrow.svg" alt="left_arrow.svg" id="left-arrow">
+      <span class="page-name"></span>
+    </div>
+    <input type="range" min="1" max="3" value="1" class="slider" id="myRange">
+    <div class="toggle-cover">
+      <div class="toggle-btn"></div>
+    </div>
+  </menu>
+  <section class="map-container">
+    <div class="maps">
+      <img src="./background.png" alt="background.png" class="background">
+      <!-- 건물 태그 -->
+      <img src="./building_image/600주년기념관.png" alt="" class="building" id="b600">
+      <img src="./building_image/명륜당.png" alt="" class="building" id="myeongryundang">
+      <img src="./building_image/국제관.png" alt="" class="building" id="global">
+      <img src="./building_image/i하우스.png" alt="" class="building" id="i-house">
+      <img src="./building_image/학생회관.png" alt="" class="building" id="student-building">
+      <img src="./building_image/금잔디.png" alt="" class="building" id="gls">
+      <img src="./building_image/중도.png" alt="" class="building" id="central-lib">
+      <img src="./building_image/교수회관.png" alt="" class="building" id="faculty-building">
+      <img src="./building_image/경영관.png" alt="" class="building" id="business-school">
+      <img src="./building_image/인문경제관.png" alt="" class="building" id="teogye-dasan">
+      <img src="./building_image/호암관.png" alt="" class="building" id="hoam">
+      <img src="./building_image/수선관.png" alt="" class="building" id="suseon">
+      <img src="./building_image/대운동장.png" alt="" class="building" id="playground">
+      <img src="./building_image/법학관.png" alt="" class="building" id="law-school">
+      <!-- 건물 이름 태그 -->
+      <img src="./tag_image/철문태그.png" alt="" class="tag" id="iron-gate-tag">
+      <img src="./tag_image/정문태그.png" alt="" class="tag" id="main-gate-tag">
+      <img src="./tag_image/쪽문태그.png" alt="" class="tag" id="side-gate-tag">
+      <img src="./tag_image/후문태그.png" alt="" class="tag" id="back-gate-tag">
+      <img src="./tag_image/i하우스태그.png" alt="" class="tag" id="i-house-tag">
+      <img src="./tag_image/학생회관태그.png" alt="" class="tag" id="student-building-tag">
+      <img src="./tag_image/교수회관태그.png" alt="" class="tag" id="faculty-building-tag">
+      <img src="./tag_image/수선관태그.png" alt="" class="tag" id="suseon-tag">
+      <img src="./tag_image/법학관태그.png" alt="" class="tag" id="law-school-tag">
+      <img src="./tag_image/호암관태그.png" alt="" class="tag" id="hoam-tag">
+      <img src="./tag_image/경영관태그.png" alt="" class="tag" id="business-school-tag">
+      <img src="./tag_image/국제관태그.png" alt="" class="tag" id="global-tag">
+      <img src="./tag_image/인문관태그.png" alt="" class="tag" id="teogye-tag">
+      <img src="./tag_image/경제관태그.png" alt="" class="tag" id="dasan-tag">
+      <img src="./tag_image/중도태그.png" alt="" class="tag" id="central-lib-tag">
+      <img src="./tag_image/600태그.png" alt="" class="tag" id="b600-tag">
+      <img src="./tag_image/명륜당태그.png" alt="" class="tag" id="myeongryundang-tag">
+      <img src="./tag_image/금잔디태그.png" alt="" class="tag" id="gls-tag">
+      <img src="./tag_image/운동장태그.png" alt="" class="tag" id="playground-tag">
+    </div>
+  </section>
+  <!-- <section class="info"> -->
+    <section class="info">
+      <div>
+        <img src="./tag_image/셔틀승차.png" alt="" class="ride-tag" id="ride-on-tag">
+        <img src="./building_image/셔틀승차-파란핀.png" alt="" class="ride-pin" class="ride-tag" id="ride-on">
+      </div>
+      <div>
+        <img src="./tag_image/셔틀하차.png" alt="" class="ride-tag" id="ride-off-tag">
+        <img src="./building_image/셔틀하차-빨간핀.png" alt="" class="ride-pin" id="ride-off">
+      </div>
+    </section>
+  <!-- </section> -->
+  <script src="./map.js"></script>
+  <nav class="nav-bar">
+    <div class="nav-icon">
+      <img src="../svg/home.svg" alt="home.svg" id="home">
+      <p class="icon-name">홈</p>
+    </div>
+    <div class="nav-icon">
+      <img src="../svg/message.svg" alt="message.svg" id="message">
+      <p class="icon-name">메시지</p>
+    </div>
+    <div class="nav-icon">
+      <img src="../svg/favorite.svg" alt="favorite.svg" id="favorites">
+      <p class="icon-name">즐겨찾기</p>
+    </div>
+    <div class="nav-icon">
+      <img src="../svg/my.svg" alt="my.svg" id="my">
+      <p class="icon-name">내 정보</p>
+    </div>
+  </nav>
+</body>
+</html>

@@ -2,8 +2,67 @@ import EVENTS from "./event.js"
 
 //DOM
 const ALARM_IMG = document.querySelector(".alarm");
+const BELL_IMG = document.querySelector("#bell");
 const TABLE = document.querySelector(".table");
 const TIMETABLE_CONTAINER = document.querySelector(".timetable");
+const hello = document.querySelector("#hello");
+const DAY_CONTAINER = document.querySelector(".days");
+const LEFT_ARROW = document.querySelector("#left-arrow");
+
+//generate date carousel
+const DAY_ARR = [
+  {
+    day : 24,
+    date : "FRI",
+  },
+  {
+    day : 25,
+    date : "SAT",
+  },
+  {
+    day : 26,
+    date : "SUN",
+  },
+  {
+    day : 27,
+    date : "SAT",
+  },
+  {
+    day : 28,
+    date : "SUN",
+  },
+]
+console.log(DAY_CONTAINER.childNodes);
+
+const renderDayInfo = (day, date, isPast=false, isCenter = false) =>{
+  // 자식노드를 담을 div 태그 (.day-info)
+  const DAY_INFO = document.createElement("div");
+  DAY_INFO.classList.add("day-info");
+  isCenter&&(DAY_INFO.id = "center")
+
+  // 1. 날짜 표시용 h3 태그
+  const DAY_INFO_DAY = document.createElement("h3");
+  const DAY_INFO_DAY_text = document.createTextNode(day);
+  DAY_INFO_DAY.appendChild(DAY_INFO_DAY_text);
+  DAY_INFO_DAY.classList.add("day-info-day");
+
+  // 2. 요일 표시용 h3 태그
+  const DAY_INFO_DATE = document.createElement("h3");
+  const DAY_INFO_DATE_text = document.createTextNode(date);
+  DAY_INFO_DATE.appendChild(DAY_INFO_DATE_text);
+  DAY_INFO_DATE.classList.add("day-info-date");
+
+  DAY_INFO.appendChild(DAY_INFO_DAY);
+  DAY_INFO.appendChild(DAY_INFO_DATE);
+
+  isPast&&DAY_CONTAINER.prepend(DAY_INFO);
+  !isPast&&DAY_CONTAINER.appendChild(DAY_INFO);
+}
+
+DAY_ARR.forEach((DAY, index)=>{
+  renderDayInfo(DAY.day,DAY.date, false, index === 2 ? true : false );
+})
+
 
 //function
 const renderHourRow = (hour, when) =>{
@@ -99,7 +158,7 @@ const renderEvent = () => {
     SCHEDULE.style.marginTop = calculateMarginTop(event.start) + "px";
     SCHEDULE.style.height = calculateHeight(event.start, event.finish) + "px";
   
-    TABLE.appendChild(SCHEDULE)
+    TABLE.appendChild(SCHEDULE);
   })
 }
 //init
@@ -115,9 +174,106 @@ for (let i=1; i<12; i++){
   renderHourRow(i, "Pm")
 };
 
-
-
 TIMETABLE_CONTAINER.scrollTo(0,684);
+hello.scrollTo((DAY_CONTAINER.offsetWidth - hello.offsetWidth)/2,0);
+// hello.scrollIntoView({block:"center"});
+console.log(DAY_CONTAINER.offsetWidth);
+
+
+const moveDayInfoLeft = (index) => {
+  setTimeout(() => {
+    DAY_CONTAINER.childNodes[index].animate(
+      {
+        transform : [
+          "translateX(0px)",
+          "translateX(-80%)",
+          "translateX(0px)",
+        ]
+      },
+      {
+        duration: 1800,
+        fill: "forwards",
+        easing: "ease"
+      }
+  )
+}, 100*index);
+
+}
+const moveDayInfoRight = (index , idx) => {
+  setTimeout(() => {
+    DAY_CONTAINER.childNodes[index].animate(
+      {
+        transform : [
+          "translateX(0px)",
+          "translateX(80%)",
+          "translateX(0px)",
+        ]
+      },
+      {
+        duration: 1800,
+        fill: "forwards",
+        easing: "ease"
+      }
+  )
+}, 100*idx);
+}
+
+let count = 29;
+
+LEFT_ARROW.addEventListener("click",()=>{
+    // console.log(DAY_CONTAINER.childNodes);
+  moveDayInfoLeft(0);
+  moveDayInfoLeft(1);
+  moveDayInfoLeft(2);
+  moveDayInfoLeft(3);
+  moveDayInfoLeft(4);
+  setTimeout(() => {
+    renderDayInfo(count,"MON",false);
+  }, 500);
+  moveDayInfoLeft(5);
+  setTimeout(() => {
+  DAY_CONTAINER.childNodes[2].id = null;
+  DAY_CONTAINER.childNodes[0].remove();
+  DAY_CONTAINER.childNodes[2].id = "center";
+  }, 500);
+    count++
+  hello.scrollTo((DAY_CONTAINER.offsetWidth - hello.offsetWidth)/2,0);
+})
+
+let counts = 25;
+
+const hil = ()=>{
+  moveDayInfoRight(4, 0);
+  moveDayInfoRight(3, 1);
+  moveDayInfoRight(2, 2);
+  moveDayInfoRight(1, 3);
+  moveDayInfoRight(0, 4);
+  setTimeout(() => {
+    renderDayInfo(counts,"MON",true);
+  }, 500);
+  moveDayInfoRight(0, 5);
+  setTimeout(() => {
+    DAY_CONTAINER.childNodes[3].id = null;
+    DAY_CONTAINER.childNodes[5].remove();
+    DAY_CONTAINER.childNodes[2].id = "center";
+  }, 500);
+  counts--
+  hello.scrollTo((DAY_CONTAINER.offsetWidth - hello.offsetWidth)/2,0);
+}
+BELL_IMG.addEventListener("click", hil )
+
+// function debounce(method, delay) {
+//   clearTimeout(method._tId);
+//   method._tId= setTimeout(function(){
+//       method();
+//   }, delay);
+// }
+
+// hello.addEventListener("scroll", ()=>{
+//   debounce(hil, 200)
+//   hello.scrollTo((DAY_CONTAINER.offsetWidth - hello.offsetWidth)/2,0);
+// })
+
 
 //누르면 오전 9시로 이동
 ALARM_IMG.addEventListener("click",()=>{

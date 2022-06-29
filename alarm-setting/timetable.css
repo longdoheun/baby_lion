@@ -4,8 +4,12 @@
   justify-content: center;
   height: 400px;
   overflow: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
-
+.timetable::-webkit-scrollbar {
+  display: none;
+}
 .table{
   position: relative;
   width: 94%;
@@ -55,6 +59,8 @@
   font-family: 'Mulish';
   font-style: normal;
   font-weight: 700;
+  /* border-radius: 10px; */
+  /* outline: 2px solid #000; */
 }
 
 .location{

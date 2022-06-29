@@ -1,0 +1,17 @@
+@media ( max-width: 390px ) {
+  .background{
+    width: 100%;
+    transition: 1s all;
+  }
+  .maps{
+    width: 160%;
+    margin-left: 37%;
+    /* transform: skew(0.01turn, 18deg); */
+    transform:rotate(46.5deg);
+    /* margin: auto; */
+    transition: 1s all;
+  }
+  .tag{
+    transform:rotate(-46.5deg);
+  }
+}

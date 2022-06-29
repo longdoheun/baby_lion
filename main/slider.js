@@ -5,7 +5,7 @@ const IMGCON = document.querySelector(".banner-container");
 const SLIDER = document.querySelector(".slider");
 const CIRCLE_CONTAINER = document.querySelector(".info-circles");
 
-BANNER.forEach((banner) => {
+BANNER.forEach((banner,idx) => {
   const img = document.createElement("div");
 
   const img_info = document.createElement("div");
@@ -34,6 +34,10 @@ BANNER.forEach((banner) => {
   img.classList.add("img");
   img_info.classList.add("img-info");
   building_img.classList.add("building-img");
+  if (idx%2 != 0){
+    PARAGRAPH.style.color = "#01BEB1";
+    img.style.backgroundColor = "#10675B";
+  }
 })
 
 const IMG = document.querySelectorAll(".img");
@@ -59,20 +63,21 @@ const CIRCLES = document.querySelectorAll(".circle");
 
 const resetCircles = () => {
   CIRCLES.forEach((circle)=>{
-    circle.style.opacity = 0.2;
+    circle.classList.remove("current")
   })
 }
 
 // default value
 let displayIDX = 0
 resetCircles();
-CIRCLES[displayIDX].style.opacity = 0.5;
+CIRCLES[displayIDX].classList.add("current")
 
 //x-scroll 위치 변경 event handler
 const changeDisplay = () => {
   displayIDX = displayIDX + 1 >= IMG.length ? 0 : displayIDX + 1
   resetCircles()
-  CIRCLES[displayIDX].style.opacity = 0.5;
+  // CIRCLES[displayIDX].style.opacity = 0.5;
+  CIRCLES[displayIDX].classList.add("current")
   SLIDER.scrollTo({
     top: 0,
     left: SLIDER.offsetWidth*displayIDX,

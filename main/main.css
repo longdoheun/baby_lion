@@ -25,18 +25,24 @@
   display: none; 
 }
 .img-info{
-  margin: 213px 0 0 17px;
+  /* margin: 213px 0 0 17px; */
+  position: absolute;
+  left:4%;
+  bottom:4%;
 }
 h1{
   font-family: 'CWDangamAsac-Bold';
   font-style: normal;
   font-weight: 700;
   font-size: 42px;
-  line-height: 22px;
+  width: 50%;
+  line-height: 42px;
   letter-spacing: -0.408px;
   color: #FFFC54;
+  /* text-align: center; */
 }
 .building-info{
+  width: 60%;
   margin-top: 10px;
   font-family: 'BM Dohyeon';
   font-style: normal;
@@ -49,9 +55,12 @@ h1{
 }
 
 .building-img{
-  margin-top: 89px;
-  width: 217px;
-  height: 217px;
+  position: absolute;
+  bottom: 15%;
+  right:-40px;
+  width: 60%;
+  max-width: 300px;
+  /* height: 217px; */
 }
 .info-circles{
   position: absolute;
@@ -68,6 +77,11 @@ h1{
   background-color: #000;
   opacity: 0.2;
 }
+
+.current{
+  background-color: #FFFF00;
+  opacity: 1;
+}
 .circle:not(:first-child){
   margin-left: 5px;
 }
@@ -78,8 +92,9 @@ h1{
   display: flex;
 }
 .img{
-  display: flex;
-  justify-content: space-between;
+  /* display: flex; */
+  position: relative;
+  /* justify-content: space-between; */
   height: 329px;
   background-color: #01BEB1;
 }
@@ -99,12 +114,15 @@ h1{
   border: 2px solid #ABB0BC;
   border-radius: 30px;
   margin-top: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;;
 }
 
 input{
   width: 80%;
   height: 22.5px;
-  margin: 10px 0 0 18px;
+  margin-left : 18px;
   border: none;
   font-family: 'Noto Sans Thai';
   font-style: normal;

@@ -1,0 +1,187 @@
+/* 건물 상대 크기 위치 배정 */
+#myeongryundang{
+  width: 23.53%;
+  top: 46.51%;
+  left: 63.18%;
+  filter: none;
+}
+
+#b600{ 
+  width : 10.44%; 
+  top : 25.21%; 
+  left : 43.35%;
+}
+
+/* python calculate */
+#global{ 
+  width : 11.5%; 
+  top : 35.64%; 
+  left : 54.19%;
+}
+#i-house{ 
+  width : 7.93%; 
+  top : 60.2%; 
+  left : 47.72%;
+}
+#student-building{ 
+  width : 10.18%; 
+  top : 34.12%; 
+  left : 31.99%;
+}
+#gls{ 
+  width : 10.57%; 
+  top : 24.12%; 
+  left : 27.89%;
+  filter: none;
+}
+#central-lib{ 
+  width : 8.59%; 
+  top : 13.26%; 
+  left : 38.6%;
+}
+#faculty-building{ 
+  width : 10.31%; 
+  top : 7.17%; 
+  left : 30.53%;
+}
+#business-school{ 
+  width : 10.05%; 
+  top : 10.43%; 
+  left : 25.64%;
+}
+#hoam{ 
+  width : 12.16%; 
+  top : 10.65%; 
+  left : 15.2%;
+}
+#teogye-dasan{ 
+  width : 18.9%; 
+  top : 1.96%; 
+  left : 5.68%;
+}
+#suseon{ 
+  width : 9.25%; 
+  top : 24.12%; 
+  left : 5.42%;
+}
+#playground{ 
+  width : 13.48%; 
+  top : 38.47%; 
+  left : 11.9%;
+  filter: none;
+}
+#law-school{ 
+  width : 11.9%; 
+  top : 39.77%; 
+  left : 0.79%;
+}
+
+/* 건물 이름 태그 상대 크기 위치 배정 python calculate */
+#iron-gate-tag{ 
+  width : 5.82%; 
+  top : 68.46%; 
+  left : 57.23%;
+}
+#main-gate-tag{ 
+  width : 5.82%; 
+  top : 78.89%; 
+  left : 87.37%;
+}
+#side-gate-tag{ 
+  width : 5.82%; 
+  top : 15.21%; 
+  left : 47.72%;
+}
+#back-gate-tag{ 
+  width : 5.82%; 
+  top : 13.91%; 
+  left : 0.66%;
+}
+#i-house-tag{ 
+  width : 9.38%; 
+  top : 68.46%; 
+  left : 47.72%;
+}
+#student-building-tag{ 
+  width : 9.38%; 
+  top : 46.95%; 
+  left : 29.74%;
+}
+#faculty-building-tag{ 
+  width : 9.38%; 
+  top : 5.22%; 
+  left : 35.69%;
+}
+#suseon-tag{ 
+  width : 8.06%; 
+  top : 20.65%; 
+  left : 1.72%;
+}
+#law-school-tag{ 
+  width : 8.06%; 
+  top : 54.77%; 
+  left : 1.19%;
+}
+#hoam-tag{ 
+  width : 8.06%; 
+  top : 16.74%; 
+  left : 12.29%;
+}
+#business-school-tag{ 
+  width : 8.06%; 
+  top : 16.52%; 
+  left : 24.72%;
+}
+#global-tag{ 
+  width : 8.06%; 
+  top : 33.9%; 
+  left : 62.52%;
+}
+#teogye-tag{ 
+  width : 10.57%; 
+  top : 6.74%; 
+  left : 3.7%;
+}
+#dasan-tag{ 
+  width : 10.57%; 
+  top : 1.3%; 
+  left : 19.17%;
+}
+#central-lib-tag{ 
+  width : 13.22%; 
+  top : 9.78%; 
+  left : 45.73%;
+}
+#b600-tag{ 
+  width : 13.88%; 
+  top : 21.52%; 
+  left : 49.3%;
+}
+#myeongryundang-tag{ 
+  width : 5.42%; 
+  top : 49.77%; 
+  left : 73.23%;
+}
+#gls-tag{ 
+  width : 5.42%; 
+  top : 29.34%; 
+  left : 30.67%;
+}
+#playground-tag{ 
+  width : 6.48%; 
+  top : 42.6%; 
+  left : 15.6%;
+}
+
+
+/* 재배치 */
+/* #b600-tag{
+  width : 13.88%; 
+  top : 21.52%; 
+  left : 45.3%;
+}
+#central-lib-tag{
+  width : 13.22%; 
+  top : 9.78%; 
+  left : 38.73%;
+} */
